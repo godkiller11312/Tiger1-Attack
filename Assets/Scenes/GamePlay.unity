@@ -133,6 +133,8 @@ GameObject:
   - component: {fileID: 52869462}
   - component: {fileID: 52869463}
   - component: {fileID: 52869464}
+  - component: {fileID: 52869465}
+  - component: {fileID: 52869466}
   m_Layer: 0
   m_Name: Phao
   m_TagString: Untagged
@@ -199,7 +201,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.28, y: 1.28}
+  m_Size: {x: 2.1333334, y: 2.1333334}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -238,6 +240,37 @@ CircleCollider2D:
   m_Offset: {x: 0.04988575, y: 5.3300037}
   serializedVersion: 2
   m_Radius: 6.5226336
+--- !u!95 &52869465
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52869460}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ced8e57c1a4daa04685cdd6da99d7d8d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &52869466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52869460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c739c3bae729c324f9371094e4ce2078, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &82228202
 GameObject:
   m_ObjectHideFlags: 0
