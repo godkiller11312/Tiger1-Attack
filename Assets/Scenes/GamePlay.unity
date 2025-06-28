@@ -977,6 +977,75 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+--- !u!1001 &1407223833
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2689051995801290406, guid: 32d2f11e32b69e44ead6a6839fc783b6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2689051995801290406, guid: 32d2f11e32b69e44ead6a6839fc783b6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2689051995801290406, guid: 32d2f11e32b69e44ead6a6839fc783b6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 2689051995801290406, guid: 32d2f11e32b69e44ead6a6839fc783b6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2689051995801290406, guid: 32d2f11e32b69e44ead6a6839fc783b6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2689051995801290406, guid: 32d2f11e32b69e44ead6a6839fc783b6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2689051995801290406, guid: 32d2f11e32b69e44ead6a6839fc783b6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2689051995801290406, guid: 32d2f11e32b69e44ead6a6839fc783b6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2689051995801290406, guid: 32d2f11e32b69e44ead6a6839fc783b6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2689051995801290406, guid: 32d2f11e32b69e44ead6a6839fc783b6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2689051995801290406, guid: 32d2f11e32b69e44ead6a6839fc783b6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8320217795312737429, guid: 32d2f11e32b69e44ead6a6839fc783b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Bullet
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 32d2f11e32b69e44ead6a6839fc783b6, type: 3}
 --- !u!1 &1703121337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1359,7 +1428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hitpoints: 10
-  MaxHitPoints: 10
+  MaxHitPoints: 100
   Healthbar: {fileID: 560567984}
 --- !u!1 &1985332996
 GameObject:
