@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 52869464}
   - component: {fileID: 52869465}
   - component: {fileID: 52869466}
+  - component: {fileID: 52869467}
   m_Layer: 0
   m_Name: Phao
   m_TagString: Untagged
@@ -271,6 +272,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c739c3bae729c324f9371094e4ce2078, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &52869467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52869460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8db41d3fd3001c74183d6140ffa2cec8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 8320217795312737429, guid: 32d2f11e32b69e44ead6a6839fc783b6,
+    type: 3}
+  firePoint: {fileID: 601230178}
+  PhaoTransform: {fileID: 52869461}
+  raycastChecker: {fileID: 52869463}
 --- !u!1 &82228202
 GameObject:
   m_ObjectHideFlags: 0

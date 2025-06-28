@@ -56,6 +56,8 @@
     <Analyzer Include="D:\Visual studio\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Bullet.cs" />
+    <Compile Include="Assets\Cannon.cs" />
     <Compile Include="Assets\EnemyBehaviour.cs" />
     <Compile Include="Assets\HealthbarBehaviour.cs" />
     <Compile Include="Assets\PhaoController.cs" />

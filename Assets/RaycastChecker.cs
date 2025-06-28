@@ -61,4 +61,6 @@ public class RaycastChecker : MonoBehaviour
             targetEnemy = null;
         }
     }
+    public Transform TargetEnemy => targetEnemy;
+
 }
