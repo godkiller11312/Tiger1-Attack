@@ -2,6 +2,7 @@
 
 public class Bullet : MonoBehaviour
 {
+    public float damage = 1f; // Sát thương mặc định của viên đạn
     public float speed = 10f;
     private Vector3 targetPosition;
 
@@ -20,6 +21,7 @@ public class Bullet : MonoBehaviour
 
     void Update()
     {
+        
         if (isImpacting) return; // Dừng di chuyển khi đang nổ
 
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
@@ -36,9 +38,19 @@ public class Bullet : MonoBehaviour
 
         if (collision.CompareTag("Enemy"))
         {
-            TriggerImpact();
+         
+            // Gây sát thương cho enemy nếu có component EnemyBehaviour
+            EnemyBehaviour enemy = collision.GetComponent<EnemyBehaviour>();
+            Debug.Log(enemy);
+            if (enemy != null)
+            {
+                enemy.TakeHit(damage);
+            }
+
+            TriggerImpact(); // Gọi animation nổ
         }
     }
+
 
     void TriggerImpact()
     {

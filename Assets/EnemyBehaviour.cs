@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
@@ -11,28 +9,31 @@ public class EnemyBehaviour : MonoBehaviour
     void Start()
     {
         Hitpoints = MaxHitPoints;
-        Healthbar.SetHealth(Hitpoints, MaxHitPoints);
 
+        if (Healthbar != null)
+        {
+            Healthbar.SetHealth(Hitpoints, MaxHitPoints);
+        }
     }
 
     public void TakeHit(float damage)
     {
-       
         Hitpoints -= damage;
-        Healthbar.SetHealth(Hitpoints, MaxHitPoints);
+
+        if (Healthbar != null)
+        {
+            Healthbar.SetHealth(Hitpoints, MaxHitPoints);
+        }
+
         if (Hitpoints <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
     }
 
-    private void Update()
+    private void Die()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeHit(2); // Gọi khi nhấn phím Space
-        }
+        // Có thể thêm hiệu ứng nổ tại đây
+        Destroy(gameObject);
     }
-
-
 }

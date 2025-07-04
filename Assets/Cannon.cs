@@ -7,15 +7,26 @@ public class Cannon : MonoBehaviour
     public Transform PhaoTransform;
     public RaycastChecker raycastChecker;
 
+    public float fireCooldown = 1.5f;
+    private float lastFireTime = -Mathf.Infinity;
+
+    private Animator animator;
+
+    void Start()
+    {
+        animator = PhaoTransform.GetComponent<Animator>();
+    }
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        Transform enemy = raycastChecker.TargetEnemy;
+
+        if (enemy != null && Time.time >= lastFireTime + fireCooldown)
         {
-            Transform enemy = raycastChecker.TargetEnemy;
-            if (enemy != null)
-            {
-                Shoot(enemy.position);
-            }
+            animator.SetTrigger("Fire");
+
+            Shoot(enemy.position);
+            lastFireTime = Time.time;
         }
     }
 

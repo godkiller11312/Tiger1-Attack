@@ -60,7 +60,6 @@
     <Compile Include="Assets\Cannon.cs" />
     <Compile Include="Assets\EnemyBehaviour.cs" />
     <Compile Include="Assets\HealthbarBehaviour.cs" />
-    <Compile Include="Assets\PhaoController.cs" />
     <Compile Include="Assets\RaycastChecker.cs" />
     <Compile Include="Assets\TankMove.cs" />
   </ItemGroup>
